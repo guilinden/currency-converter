@@ -1,15 +1,13 @@
 (function(){
 	angular
 	    .module('app')
-	    .factory('search', search);
+	    .service('search', search);
 
 	function search($http){
 
-		var list = {
-			getList: getList
-		}
+		var vm = this;
 
-		return list;
+		vm.getList = getList;
 
 		function getList(){
 			return $http({
