@@ -27,7 +27,7 @@
     </div>
     <input type="number" class="form-control input-sm" name="" ng-model="appCtrl.money">
     <select class="form-control" ng-model="appCtrl.currencyTo">
-        <option disabled selected value required> -- Select base currency -- </option>
+        <option disabled selected value required> -- Select to currency -- </option>
         <option ng-repeat="(currency,value) in appCtrl.list.data.rates" value="{{currency}}">{{currency}}</option>
     </select>
     <br>
